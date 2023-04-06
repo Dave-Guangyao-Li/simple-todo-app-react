@@ -159,9 +159,9 @@ body {
   flex-grow: 0;
 }
 
-.check-box-icon {
+.checkbox-icon {
   /* checkbox / checked */
-
+  font-size: 48px; /* add this line */
   width: 48px;
   height: 48px;
 
@@ -171,7 +171,7 @@ body {
   flex-grow: 0;
 }
 
-.check-box-text {
+.checkbox-text {
   /* text */
 
   width: 159px;
@@ -193,4 +193,6 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+  /* Prevent text from wrapping */
+  white-space: nowrap;
 }
