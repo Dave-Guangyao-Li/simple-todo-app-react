@@ -175,10 +175,26 @@ body {
   flex-grow: 0;
 }
 
+.delete-icon {
+  /* delete */
+  font-size: 48px; /* add this line */
+  width: 48px;
+  height: 48px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
 .checkbox-text {
   /* text */
-
-  width: 159px;
+  /* this means we set the background color to transparent, so that the text can be seen */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  /* width: 159px; */
   height: 38px;
 
   font-family: 'Rubik';
@@ -205,4 +221,10 @@ body {
 .todo-box-2 .title-text,
 .todo-box-2 .checkbox-text {
   color: white;
+}
+
+/* change the filling color of checkbox icon */
+.todo-box-2 .checkbox-icon,
+.todo-box-1 .checkbox-icon {
+  color: #00bfff;
 }
