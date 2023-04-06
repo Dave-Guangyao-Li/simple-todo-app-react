@@ -74,6 +74,7 @@ body {
   flex-grow: 0;
   /* make todo box scrollable */
   overflow-y: scroll;
+  white-space: nowrap;
 }
 
 .todo-box-2 {
@@ -96,6 +97,9 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+
+  overflow-y: scroll;
+  white-space: nowrap;
 }
 
 .title-frame {
@@ -195,4 +199,10 @@ body {
   flex-grow: 0;
   /* Prevent text from wrapping */
   white-space: nowrap;
+}
+
+/* to make font color white, add this to the css */
+.todo-box-2 .title-text,
+.todo-box-2 .checkbox-text {
+  color: white;
 }
