@@ -1,0 +1,70 @@
+body {
+  /* set the body to 100% height */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-frame {
+  /* Frame 2 */
+  /* keep center on the screen */
+  /* Here, we are setting the `height` of the `body` element to the full viewport height (`100vh`). Then, we are using `display: flex` on the `body` element to create a flex container. We are also using `justify-content: center` and `align-items: center` to center the `.app-frame` container both horizontally and vertically within the `body` element. */
+  position: relative;
+  width: 1920px;
+  height: 960px;
+
+  /* Mild grey */
+  background: #f5f5f5;
+}
+.rect-frame {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 1280.5px;
+  height: 960px;
+  left: 2px;
+  top: 0px;
+
+  background: #333333;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* transform to trapezoid */
+  clip-path: polygon(0 0px, 1280.5px 0, 0 1920px, 0 1280.5px);
+  /* transform-orgin: 0 0; */
+}
+.lists-frame {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 88px;
+  background: red;
+  order: 11;
+
+  position: absolute;
+  width: 1184px;
+  height: 496px;
+  left: calc(50% - 1184px / 2);
+  top: calc(50% - 496px / 2);
+
+  filter: drop-shadow(0px 12px 44px rgba(0, 0, 0, 0.1));
+}
+/* <div className="app-frame">
+<div className="rect-frame ">
+  <div className="lists-frame">
+    <div className="todo-box-1">
+      <div className="title"></div>
+      <div className="checkbox-item">
+        <div className="checkbox-icon"></div>
+        <div className="checkbox-text"></div>
+      </div>
+    </div>
+    <div className="todo-box-2">
+
+    </div>
+  </div>
+</div>
+</div> */
